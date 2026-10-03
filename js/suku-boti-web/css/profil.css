@@ -1,0 +1,85 @@
+.tl {
+  border-left: 3px solid var(--acc);
+  margin: 1.5rem 0 0 0.5rem;
+  padding-left: 1.4rem;
+}
+.it {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  margin: 0.9rem 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.it::before {
+  content: "";
+  position: absolute;
+  left: -2.05rem;
+  top: 1.3rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--acc2);
+}
+.it.open {
+  border-color: var(--acc);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
+}
+.it > button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  border: 0;
+  border-radius: 0;
+  padding: 1rem 1.2rem;
+}
+.it > button:hover {
+  transform: none;
+}
+.it > button b {
+  display: block;
+  color: var(--acc);
+  font-size: 1.1rem;
+}
+.it > button small {
+  display: block;
+}
+.it > button::after {
+  content: "＋";
+  font-size: 1.5rem;
+  color: var(--acc2);
+  transition: 0.3s;
+  flex: none;
+}
+.it.open > button::after {
+  transform: rotate(45deg);
+}
+.bd {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding: 0 1.2rem;
+}
+.it.open .bd {
+  padding-bottom: 1.1rem;
+}
+.bd p {
+  margin: 0.6rem 0;
+}
+.bd .tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  margin: 0.2rem 0.2rem 0 0;
+  color: var(--acc2);
+}
+.note {
+  font-size: 0.85rem;
+  color: var(--mut);
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#150d07" />
+    <title>Peta — Suku Boti</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/peta.css" />
+  </head>
+  <body data-page="peta">
+    <main id="main" tabindex="-1">
+      <p class="eyebrow">Simpul 5</p>
+      <h1>Peta Interaktif</h1>
+      <p>
+        Peta langsung menuju lokasi. Pilih tujuan, geser, dan perbesar sesuka
+        Anda.
+      </p>
+      <div class="chips" role="tablist" aria-label="Pilih lokasi">
+        <button class="chip on" data-k="boti">📍 Desa Boti</button
+        ><button class="chip" data-k="soe">SoE</button
+        ><button class="chip" data-k="kupang">Kupang</button>
+      </div>
+      <div class="mapbox" id="real">
+        <iframe
+          id="fr"
+          title="Peta lokasi"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+      
+     
+      <div class="row">
+        <a class="btn pri" id="gm" target="_blank" rel="noopener"
+          >Buka di Google Maps ↗</a
+        >
+        
+      </div>
+      <p class="note mut">Peta membutuhkan koneksi internet.</p>
+      <div class="next rv" id="next"></div>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/peta.js"></script>
+  </body>
+</html>

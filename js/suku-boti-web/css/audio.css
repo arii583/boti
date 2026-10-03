@@ -1,0 +1,36 @@
+textarea {
+  width: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+  font: inherit;
+}
+.wave {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  height: 60px;
+  margin: 1rem 0;
+}
+.wave i {
+  width: 8px;
+  height: 12px;
+  background: var(--acc);
+  border-radius: 4px;
+}
+.wave.on i {
+  animation: w 0.8s infinite ease-in-out;
+}
+.wave i:nth-child(2n) {
+  animation-delay: 0.15s;
+}
+.wave i:nth-child(3n) {
+  animation-delay: 0.3s;
+}
+@keyframes w {
+  50% {
+    height: 56px;
+  }
+}

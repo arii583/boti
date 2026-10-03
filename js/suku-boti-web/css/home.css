@@ -1,0 +1,36 @@
+.hero {
+  padding: 4rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 32px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(255, 155, 94, 0.35),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(246, 196, 83, 0.25),
+      transparent 45%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent 0 16px,
+      rgba(255, 255, 255, 0.04) 16px 32px
+    );
+}
+.hero em {
+  font-style: normal;
+  background: linear-gradient(90deg, var(--acc), var(--acc2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lead {
+  max-width: 60ch;
+  color: var(--mut);
+  font-size: 1.15rem;
+}
+.hero{margin-bottom:2rem}
+

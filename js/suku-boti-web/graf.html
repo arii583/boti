@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#150d07" />
+    <title>Graf Hypermedia — Suku Boti</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/graf.css" />
+  </head>
+  <body data-page="graf">
+    <main id="main" tabindex="-1">
+      <p class="eyebrow">Deliverable 1</p>
+      <h1>Struktur Graf Hypermedia</h1>
+      <p>
+        Graf berarah <b>G = (V, E)</b>: simpul V adalah halaman, panah E adalah
+        tautan. Ketuk simpul untuk membuka halaman. Anda sedang berada di simpul
+        <b>Graf</b> (disorot).
+      </p>
+      <svg
+        id="g"
+        viewBox="0 0 420 330"
+        class="graph"
+        role="img"
+        aria-label="Graf hypermedia"
+      ></svg>
+      <p class="mut">
+        Jangkar informasi: teks, gambar (motif), audio (TTS), dan peta
+        interaktif.
+      </p>
+      <div class="next rv" id="next"></div>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/graf.js"></script>
+  </body>
+</html>

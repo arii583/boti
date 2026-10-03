@@ -1,0 +1,1 @@
+@media print{body *{visibility:hidden}#doc,#doc *{visibility:visible}#doc{position:absolute;left:0;top:0;width:100%;background:#fff;color:#000;border:0}}

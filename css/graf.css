@@ -1,0 +1,4 @@
+.graph{width:100%;background:var(--card);border:1px solid var(--line);border-radius:24px}
+.e{stroke:var(--mut);stroke-width:1.4;opacity:.7}
+.n{cursor:pointer}.n circle{fill:var(--bg2);stroke:var(--acc);stroke-width:3;transition:.2s}.n:hover circle,.n.cur circle{fill:var(--acc)}
+.n text{fill:var(--fg);font-size:9px;text-anchor:middle;pointer-events:none}.n:hover text,.n.cur text{fill:var(--on);font-weight:700}
